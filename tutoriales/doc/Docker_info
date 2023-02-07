@@ -1,0 +1,12 @@
+
+
+MONGO
+# Creación del contenedor:
+
+sudo docker run -dp 27017:27017 -v local-mongo:/data/db --name local-mongo --restart=always mongo
+
+# Conectarse al contenedor:
+
+docker exec -it local-mongo /bin/bash
+
+Instalar Studio 3T para MongoDB y acceder a la base de datos en docker.

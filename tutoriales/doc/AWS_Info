@@ -1,0 +1,11 @@
+# Conectarse a la máquina:
+
+ssh -i "ClavePruebaMicroServicioTutoriales.pem" ubuntu@ec2-34-207-154-120.compute-1.amazonaws.com
+
+# Copiar el dockerfile:
+
+scp -i "ClavePruebaMicroServicioTutoriales.pem" docker-compose.yml ubuntu@ec2-34-207-154-120.compute-1.amazonaws.com:/home/ubuntu
+
+# Crear los contenedores dentro de la máquina:
+
+docker-compose up

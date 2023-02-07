@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: tutoriales-servicio
+  main:
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      host: 182.28.0.11
+      port: 27017
+      database: DIU
